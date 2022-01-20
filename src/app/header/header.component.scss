@@ -1,0 +1,129 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.background {
+    background-image: linear-gradient(to right, #5d6396, #9da1c0, #9da1c0, #5d6396);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hed {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: medium;
+}
+
+.side-menu {
+    display: none;
+}
+
+.menu {
+    display: contents;
+}
+
+ ::ng-deep .mat-menu-panel {
+    display: none;
+}
+
+ ::ng-deep .mat-button-toggle-button {
+    color: black;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 768px) {
+     ::ng-deep .mat-menu-panel {
+        display: block;
+        /* width: 100%; */
+        /* max-width:max-content !important; */
+    }
+    .menu {
+        display: none;
+    }
+    .side-menu {
+        display: contents;
+    }
+}
+
+.mnu {
+    background-color: #1a237e;
+    color: white;
+}
+
+.active {
+    /* padding-bottom: 5px; */
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transition: .2s;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    overflow: hidden;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+/* .small-profile-picture {} */
+
+.dropbtn {
+    background-color: #1a237e;
+    border: 2px solid #50597b;
+    color: white;
+    /* padding: 16px; */
+    width: 33px;
+    height: 40px;
+    /* font-size: 16px; */
+    /* border: none; */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    margin-left: -150px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content label {
+    color: black;
+    padding: 12px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* .dropdown-content a:hover {
+    background-color: #ddd;
+} */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1a237e;
+}
